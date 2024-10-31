@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    height: 50000px;
+}
+:root{
+    --mainColor:#4a2c2a;
+    --subColor:#3a3a3a;
+    --thColor:#a28f8d;
+
+    --mainFont: "Roboto Slab", serif;
+    --subFont: 'Caudex', serif;
+}
+.navbar-zz{
+    background-color: #5d5757;
+    color: #fff;
+  
+}
+a.navbar-brand.d-flex.align-items-center {
+    gap: 7px;
+}
+.navbar-brand img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.time h5{
+    font-family: var(--mainFont);
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+i.fa-regular.fa-clock {
+    margin-bottom: 5px;
+}
+.time.d-flex.align-items-center {
+    gap: 6px;
+}
+.icon.d-flex.justify-content-center.align-items-center {
+    gap: 50px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.facebook,
+.instgram,
+.whats {
+    background-color: #fff;
+    color: var(--subColor);
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+    
+}
+
+
+.facebook:hover,
+.instgram:hover,
+.whats:hover {
+    background-color: var(--subColor);
+    color: #fff;
+}
+
+
+.nav-barfirst i.fa-solid.fa-user {
+  
+    color: #fff;
+}
+.nav-2.navbar-expand-lg {
+    background-color: var(--subColor);
+}
+.navbar-brand{
+    font-family: var(--mainFont);
+}
+.nav-item a{
+   
+     color: #fff;
+     font-size: 17px;
+}
+.nav-link:focus, .nav-link:hover  {
+    color: var(--thColor);
+
+}
+.navbar-brand  h3{
+    font-size: 23px;
+    color: #fff;
+}
+ul.navbar-nav.ms-auto.d-flex.align-items-center {
+    gap: 50px;
+}
+i.fa-solid.fa-cart-shopping {
+    margin-left: 25px;
+    color: #fff;
+}
+
+/*******************************************************************/
+.header {
+    position: relative;
+    height: 670px; /* Adjust height as needed */
+    overflow: hidden; /* إخفاء الأجزاء الزائدة */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/coffe4.jpg");
+    background-size: 103%;
+    background-position: center;
+    filter: brightness(0.5) blur(2px);  /* Apply blur effect to the background */
+    z-index: 0; /* Behind other content */
+}
+
+.dec-header {
+    position: relative; /* لجعل العنصر فوق الخلفية */
+    color: #fff; /* لون النص */
+    z-index: 1; /* فوق الخلفية */
+    text-align: center; /* لتوسيع النص في المنتصف */
+    padding-top: 20%; /* مسافة من الأعلى */
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--mainFont);
+}
+.button{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button .btn.btn-1{
+    background-color: var(--subColor);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: background-color 0.3s ease; 
+}
+.button .btn.btn-1:hover{
+    background-color: var(--thColor);
+    color: var(--subColor);
+    cursor: pointer; 
+}
+.button .btn.btn-2{
+    background-color: var(--thColor);
+    color: var(--subColor);
+    font-size: 15px;
+    font-weight: 400;
+    transition: background-color 0.3s ease; 
+}
+.button .btn.btn-2:hover{
+    background-color: var(--subColor);
+    color: #fff;
+    cursor: pointer; 
+}
+.header .dec-header h1{
+    font-size: 45px;
+  
+}
+.header .dec-header h3{
+    font-size: 28px;
+  
+}
+.dec-header p {
+    width: 80%; /* عرض الفقرة */
+    font-size: 1.2rem; /* حجم الخط أكبر قليلاً */
+    text-align: center; /* توسيط النص */
+    margin: 0 auto; /* توسيط الفقرة */
+}
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+.footer{
+    font-family: var(--subFont);
+    background-color: var(--subColor);
+}
+.footer a {
+    text-decoration: none;
+
+}
+ul.list-unstyled.mt-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+}
+
+
+.scrollNavBar.navbar-expand-lg  {
+    background-color: var(--mainColor); /* Adjust as needed */
+    transition: background-color 0.3s ease;
+}
+/*******************************************************************/
+.our-special-coffee{
+    font-family: var(--mainFont);
+}
+.our-special-coffee h1{
+    color: #4a2c2a;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+    flex-direction: column;
+    gap: 15px;
+   
+    
+}
+.swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 25px;
+}
+.card-info {
+    margin-bottom: 30px;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fff;
+}
+
+.swiper-slide,
+.swiper-slide.swiper-slide.swiper-slide-active {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px ;
+
+   width: 270px;
+}
+
+.swiper-slide h3{
+    font-size: 20px;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.swiper-slide .card-info .down span {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.down .order-now {
+    background-color: var;
+    background-color: var(--subColor);
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
