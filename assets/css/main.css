@@ -163,18 +163,20 @@ i.fa-solid.fa-cart-shopping {
     width: 100%;
     height: 100%;
     background-image: url("../img/coffe4.jpg");
-    background-size: 103%;
+    background-size: cover;
     background-position: center;
-    filter: brightness(0.5) blur(2px);  
+    background-repeat: no-repeat; 
+    filter: brightness(0.3) blur(2px);  
     z-index: 0;
 }
 
+
 .dec-header {
-    position: relative; /* لجعل العنصر فوق الخلفية */
-    color: #fff; /* لون النص */
-    z-index: 1; /* فوق الخلفية */
-    text-align: center; /* لتوسيع النص في المنتصف */
-    padding-top: 20%; /* مسافة من الأعلى */
+    position: relative; 
+    color: #fff; 
+    z-index: 1; 
+    text-align: center; 
+    padding-top: 20%; 
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -224,10 +226,57 @@ i.fa-solid.fa-cart-shopping {
   
 }
 .dec-header p {
-    width: 80%; /* عرض الفقرة */
-    font-size: 1.2rem; /* حجم الخط أكبر قليلاً */
-    text-align: center; /* توسيط النص */
-    margin: 0 auto; /* توسيط الفقرة */
+    width: 80%; 
+    font-size: 1.2rem; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+@media (max-width: 600px) {
+    .header .dec-header h1{
+        font-size: 35px;
+      
+    }
+    .header .dec-header h3{
+        font-size: 23px;
+      
+    }
+    .dec-header p {
+     
+        font-size: 1rem;
+     
+    }
+}
+@media (max-width: 465px) {
+    .header .dec-header h1{
+        font-size: 30px;
+      
+    }
+    .header .dec-header h3{
+        font-size: 19px;
+      
+    }
+    .dec-header p {
+     
+        font-size: .95rem;
+     
+    }
+}
+@media (max-width: 425px) {
+    .dec-header {
+        margin-top: 46%;
+    }
+    .header .dec-header h1{
+        font-size: 25px;
+      
+    }
+    .header .dec-header h3{
+        font-size: 17px;
+      
+    }
+    .dec-header p {
+     
+        font-size: .8rem;
+    }
 }
 
 /*******************************************************************/
@@ -267,6 +316,7 @@ i.fa-solid.fa-cart-shopping {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 
 .swiper-pagination-bullet-active {
@@ -274,21 +324,31 @@ i.fa-solid.fa-cart-shopping {
     background: #fff;
 }
 @media (max-width: 1200px) {
-    .swiper-slide h3{
-        font-size: 18px;
-        box-sizing: border-box;
-    }
-}
-@media (max-width: 768px) {
-    .swiper-slide h3{
+    .swiper-slide h3 {
         left: 0;
         margin-top: 5px;
-         padding: 5px;
-         position: relative;
-         text-align: center;
-         font-size: 14px;
-        
-        }
+        padding: 5px;
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper-slide h3 {
+
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper-slide h3 {
+
+        font-size: 11px;
+
+    }
 }
 
 /****************************************************************/
