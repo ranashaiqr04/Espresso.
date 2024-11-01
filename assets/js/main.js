@@ -13,7 +13,7 @@ window.onscroll = function() {
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 3.5,
     spaceBetween: 30,
     freeMode: true,
     pagination: {
@@ -21,6 +21,7 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
 
 
  
