@@ -140,7 +140,7 @@ i.fa-solid.fa-cart-shopping {
     }
 
   }
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
 
     .time h5{
       margin-left: 25px;
@@ -305,8 +305,15 @@ p.card-text.p-left {
 a.btn.read-more{
     background-color: var(--mainColor);
     color: #fff;
+    transition: background-color 0.3s ease;
 
 }
+a.btn.read-more:hover {
+    background-color:var(--subColor);
+    cursor: pointer;
+
+}
+
 .coffe1,
 .coffe2{
     display: none;
@@ -327,6 +334,16 @@ img.rounded-4.stockCake {
 }
 img.rounded-4.barista {
     width: 280px;
+}
+.about.d-flex{
+    gap: 20px;
+}
+.serving,
+img.img03{
+    display: none;
+}
+.last-img{
+    position: relative;
 }
 @media (max-width: 1378px) {
     .coffe8{
@@ -495,13 +512,7 @@ img.rounded-4.barista {
         height: 297px;
     }
 }
-.serving,
-img.img03{
-    display: none;
-}
-.last-img{
-    position: relative;
-}
+
 @media (max-width: 595px) {
     .coffe5,
     .coffe2,
@@ -509,7 +520,9 @@ img.img03{
     .coffe10,
     .coffe1,
     img.rounded-4.barista,
-    img.rounded-4.stockCake {
+    img.rounded-4.stockCake,
+    .secound,
+    .first {
         display: none;
     }
     .first{
@@ -528,6 +541,23 @@ img.img03{
         display: block;
     }
 
+}
+@media (max-width: 530px){
+    h5.card-title.title-left {
+        font-size: 30px;
+    }
+    p.card-text.p-left {
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    h5.card-title.title-left {
+        font-size: 25px;
+    }
+    p.card-text.p-left {
+        font-size: 10px;
+        font-weight: 500;
+    }
 }
 /*******************************************************************/
 .our-special-coffee,
