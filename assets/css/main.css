@@ -71,7 +71,12 @@ i.fa-regular.fa-clock {
 .log-in {
     font-size: 25px;
 }
+.btn-fa-user {
 
+    background: none;
+    border: none;
+    box-shadow: none;
+}
 .log-in:hover {
     color: var(--mainColor);
     cursor: pointer;
@@ -262,36 +267,45 @@ i.fa-solid.fa-cart-shopping {
     text-align: center;
     margin: 0 auto;
 }
-
+@media (max-width:925px){
+    .dec-header {
+        padding-top: 36%;
+    }
+}
+@media (max-width:655px){
+    .header .dec-header h1 {
+        font-size: 33px ;
+    }
+    
+    .header .dec-header h3 {
+        font-size: 20px ;
+    }
+    
+    .dec-header p {
+        font-size: 1.1rem ;
+    }
+    .dec-header {
+        padding-top: 57%;
+    }
+}
 @media (max-width: 600px) {
     .header .dec-header h1 {
-        font-size: 35px;
-
+        font-size: 30px;
     }
 
     .header .dec-header h3 {
-        font-size: 23px;
-
+        font-size: 18px;
     }
 
     .dec-header p {
-
         font-size: 1rem;
-
     }
 }
 
-@media (max-width: 465px) {
-    .header .dec-header h1 {
-        font-size: 30px;
-
+@media (max-width: 493px) {
+    .dec-header {
+        padding-top: 57%;
     }
-
-    .header .dec-header h3 {
-        font-size: 19px;
-
-    }
-
     .dec-header p {
 
         font-size: .95rem;
@@ -299,27 +313,12 @@ i.fa-solid.fa-cart-shopping {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 448px) {
     .dec-header {
-        margin-top: 46%;
+        padding-top: 75%;
     }
-
-    .header .dec-header h1 {
-        font-size: 25px;
-
-    }
-
-    .header .dec-header h3 {
-        font-size: 17px;
-
-    }
-
-    .dec-header p {
-
-        font-size: .8rem;
-    }
+ 
 }
-
 /*******************************************************************/
 .Aabouts {
     padding: 65px;
@@ -640,14 +639,25 @@ img.img03 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
     h5.card-title.title-left {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     p.card-text.p-left {
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 500;
+    }
+    a.btn.read-more {
+     font-size: 12px;
+    }
+    img.img03 {
+        width: 122px;
+        top: 82%;
+        left: 41%;
+    }
+    .serving{
+        margin-top: -38%;
     }
 }
 
@@ -1138,36 +1148,21 @@ overflow: hidden;
     .menu-list { 
         gap: 18px;
     }
+    span.ps-4.fs-lg.m-0 {
+        font-size: 15px;
+    }
 }
 @media (max-width:533px) {
     .item.d-flex.gap-5{
         gap: 1rem !important;
     }
 }
-@media (max-width:505px) {
+@media (max-width:587px) {
     .menu-item h1{
-        font-size: 22px;
+        font-size: 18px;
     }
     h6.m-0.pe-4.h5 {
         font-size: 10px !important;
-    }
-    
-    p.m-0 {
-        font-size: 10px !important;
-    }
-    button.btn.button-menu{
-        font-size: 14px;
-  
-    }
- 
-
-}
-@media (max-width:410px) {
-    .menu-item h1{
-        font-size: 20px;
-    }
-    h6.m-0.pe-4.h5 {
-        font-size: 8px !important;
     }
     
     p.m-0 {
@@ -1175,10 +1170,34 @@ overflow: hidden;
     }
     button.btn.button-menu{
         font-size: 12px;
-  
     }
- 
 
+}
+@media (max-width:420px) {
+  
+    p.m-0 {
+        font-size: 8px !important;
+    }
+    button.btn.button-menu{
+        font-size: 12px;
+    }
+    span.ps-4.fs-lg.m-0 {
+        font-size: 11px;
+    }
+}
+@media (max-width:405px){
+    button.btn.button-menu {
+        font-size: 9px;
+    }
+    p.m-0 {
+        font-size: 8px !important;
+    }
+    button.btn.button-menu{
+        font-size: 12px;
+    }
+    span.ps-4.fs-lg.m-0 {
+        font-size: 11px;
+    }
 }
 
 .header-contact{
@@ -1214,6 +1233,57 @@ overflow: hidden;
 }
 
 
-span.navbar-toggler-icon {
+.menu-icon {
     background-color: #fff;
 }
+
+/************Model****************/
+.modal-content {
+    margin-top: 52%;
+  
+}
+.modal-dialog {
+    font-family: var(--mainFont);
+}
+h5#exampleModalLabel {
+    font-size: 34px;
+    color: var(--mainColor);
+    margin-left: 37%;
+}
+.modal-body .form-name,
+.modal-body .form-email {
+    font-size: 23px;
+    color: var(--mainColor);
+}
+.form-btn{
+    background-color: var(--mainColor);
+    color: #fff;
+    font-weight: 400;
+}
+@media (max-width:587px) {
+    .modal-content {
+        width: 72%;
+    }
+    .modal-dialog {
+        margin-left: 26%;
+    }
+    h5#exampleModalLabel {
+        margin-left: 30%;
+    }
+}
+@media (max-width:482px) {
+    h5#exampleModalLabel {
+        margin-left: 22%;
+    }
+}
+@media (max-width:391px) {
+    h5#exampleModalLabel {
+        margin-left: 19%;
+        font-size: 30px;
+    }
+    .modal-body .form-name, .modal-body .form-email {
+        font-size: 23px;
+        color: var(--mainColor);
+    }
+}
+
