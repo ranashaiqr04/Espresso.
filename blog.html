@@ -50,7 +50,33 @@
             </div>
         </div>
     </nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
 
+                <div class="mb-3">
+                    <label for="exampleInputtext" class="form-name">Name</label>
+                    <input type="text" class="form-control" id="exampleInputtext">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-email">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+    
+                <button type="submit" class="btn rounded-4 form-btn">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--Header -->
     <header class="header-blog" id="home">
         <div class="background-blog"></div>
@@ -64,7 +90,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon menu-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto d-flex align-items-center">
@@ -85,7 +111,7 @@
                             <a class="nav-link" href="./contact.html" >Contact </a>
                         </li>
                         <li class="nav-item nav-last">
-                            <a class="nav-link Account d-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Account</a>
+                            <a class="nav-link Account" href="#acount" data-bs-toggle="modal" data-bs-target="#exampleModal">Account</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-cart-shopping"></i>

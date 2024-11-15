@@ -255,6 +255,9 @@ i.fa-solid.fa-cart-shopping {
     font-size: 45px;
 
 }
+ul.navbar-nav.ms-auto.d-flex.align-items-center {
+    gap: 12px;
+}
 
 .header .dec-header h3 {
     font-size: 28px;
@@ -307,9 +310,7 @@ i.fa-solid.fa-cart-shopping {
         padding-top: 57%;
     }
     .dec-header p {
-
         font-size: .95rem;
-
     }
 }
 
@@ -317,14 +318,12 @@ i.fa-solid.fa-cart-shopping {
     .dec-header {
         padding-top: 75%;
     }
- 
 }
 /*******************************************************************/
 .Aabouts {
     padding: 65px;
     font-family: var(--mainFont);
     margin-bottom: 20px;
-
 }
 
 .about .left {
@@ -613,20 +612,25 @@ img.img03 {
     .first {
         height: 10%;
     }
-
     .serving {
         display: block;
-        width: 165px;
+        width: 158px;
     }
-
     img.img03 {
-        width: 140px;
+        width: 139px;
         position: absolute;
-        top: 85%;
+        top: 82%;
         left: 23%;
         display: block;
     }
 
+}
+@media (max-width: 545px) {
+
+    .Aabouts {
+        padding: 36px !important;
+    }
+ 
 }
 
 @media (max-width: 530px) {
@@ -637,9 +641,21 @@ img.img03 {
     p.card-text.p-left {
         font-size: 12px;
     }
+    .serving {
+        width: 137px;
+    }
+    img.img03 {
+        width: 129px;
+        top: 76%;
+        left: 24%;
+   
+    }
+    a.btn.read-more {
+        font-size: 12px;
+     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 461px) {
     h5.card-title.title-left {
         font-size: 22px;
     }
@@ -648,19 +664,33 @@ img.img03 {
         font-size: 8px;
         font-weight: 500;
     }
-    a.btn.read-more {
-     font-size: 12px;
-    }
     img.img03 {
-        width: 122px;
-        top: 82%;
-        left: 41%;
+        width: 99px;
+        top: 78%;
+        left: 35%;
     }
     .serving{
-        margin-top: -38%;
+        margin-top: -24%;
+        width: 120px;
     }
 }
-
+@media (max-width: 420px) {
+    a.btn.read-more {
+        font-size: 11px;
+    }
+    img.img03 {
+        width: 103px;
+        top: 82%;
+        left: 30%;
+    }
+    .serving {
+        margin-top: -24%;
+        width: 108px;
+    }
+    .Aabouts{
+        margin-top: 21px;
+    }
+}
 /*******************************************************************/
 .our-special-coffee,
 .our-special-Dessert {
@@ -1152,11 +1182,6 @@ overflow: hidden;
         font-size: 15px;
     }
 }
-@media (max-width:533px) {
-    .item.d-flex.gap-5{
-        gap: 1rem !important;
-    }
-}
 @media (max-width:587px) {
     .menu-item h1{
         font-size: 18px;
@@ -1171,10 +1196,19 @@ overflow: hidden;
     button.btn.button-menu{
         font-size: 12px;
     }
-
+}
+@media (max-width:533px) {
+    .item.d-flex.gap-5{
+        gap: .8rem !important;
+    }
+    .menu-item .p-5{
+        padding: .5rem !important;
+    }
 }
 @media (max-width:420px) {
-  
+    .item.d-flex.gap-5{
+        gap: .5rem !important;
+    }
     p.m-0 {
         font-size: 8px !important;
     }
@@ -1197,6 +1231,9 @@ overflow: hidden;
     }
     span.ps-4.fs-lg.m-0 {
         font-size: 11px;
+    }
+    .menu-item .p-5{
+        padding: .2rem !important;
     }
 }
 
