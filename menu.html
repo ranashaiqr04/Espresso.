@@ -43,40 +43,42 @@
                 </div>
             </div>
 
+
             <!--Account-->
             <div class="acount " style="display: flex; gap: 5px;">
-                <i class="fa-solid fa-user log-in "></i>
+                <button type="button " class="btn-fa-user" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-user log-in "></i>
+                </button>
+            </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
 
+                        <div class="mb-3">
+                            <label for="exampleInputtext" class="form-name">Name</label>
+                            <input type="text" class="form-control" id="exampleInputtext">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-email">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <button type="submit" class="btn rounded-4 form-btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </nav>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-
-                <div class="mb-3">
-                    <label for="exampleInputtext" class="form-name">Name</label>
-                    <input type="text" class="form-control" id="exampleInputtext">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-email">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-    
-                <button type="submit" class="btn rounded-4 form-btn">Submit</button>
-              </form>
-        </div>
-      </div>
     </div>
-  </div>
     <!--Header -->
     <header class="header-menu" id="home">
         <div class="background-menu"></div>
@@ -97,21 +99,22 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                         </li>
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html" >About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./blog.html" >Blog</a>
+                            <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.html" >Contact </a>
+                            <a class="nav-link" href="./contact.html">Contact </a>
                         </li>
                         <li class="nav-item nav-last">
-                            <a class="nav-link Account" href="#acount" data-bs-toggle="modal" data-bs-target="#exampleModal">Account</a>
+                            <a class="nav-link Account" href="#acount" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Account</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -142,10 +145,11 @@
                 <div class="accordion-items d-flex justify-content-center flex-column gap-2">
                     <!--section 1-->
                     <div class="item d-flex gap-5">
-                        <button type="button" class="btn button-menu" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        <button type="button" class="btn button-menu"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                             Coffee
                         </button>
-                       
+
                         <div class="content-menu">
                             <div class="menu-list">
                                 <ul class="list-unstyled m-0">
@@ -296,8 +300,9 @@
                     </div>
                     <!--section 2-->
                     <div class="item d-flex gap-5">
-                        <button type="button" class="btn button-menu" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                         Dessert
+                        <button type="button" class="btn button-menu"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                            Dessert
                         </button>
                         <div class="content-menu">
                             <div class="menu-list">
@@ -325,7 +330,7 @@
 
                                     <li class="py-2">
                                         <div class="d-flex align-items-baseline pb-2">
-                                            <h6 class="m-0 pe-4 h5 ">Chocolate Chip Cookies</h6>
+                                            <h6 class="m-0 pe-4 h5 ">Chocolate Cookies</h6>
                                             <span class="border-bottom flex-grow-1"></span>
                                             <span class="ps-4 fs-lg m-0">
                                                 $4.5
@@ -391,7 +396,7 @@
 
                                     <li class="py-2">
                                         <div class="d-flex align-items-baseline pb-2">
-                                            <h6 class="m-0 pe-4 h5 ">Chocolate Chip Cookies</h6>
+                                            <h6 class="m-0 pe-4 h5 ">Chocolate Cookies</h6>
                                             <span class="border-bottom flex-grow-1"></span>
                                             <span class="ps-4 fs-lg m-0">
                                                 $4.5
@@ -438,7 +443,8 @@
                     </div>
                     <!--section 3-->
                     <div class="item d-flex gap-5">
-                        <button type="button" class="btn button-menu" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        <button type="button" class="btn button-menu"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                             Snacks
                         </button>
                         <div class="content-menu">

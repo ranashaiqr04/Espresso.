@@ -12,21 +12,6 @@ window.onscroll = function() {
 
 };
 
-function scrollToSection(event, sectionId) {
-    event.preventDefault(); 
-
-    
-    const section = document.getElementById(sectionId);
-    if (section) {
-        
-        section.scrollIntoView({
-            behavior: 'smooth', 
-            block: 'start'      
-        });
-    }
-}
-
-
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3.5,
@@ -54,32 +39,6 @@ for (var i = 0; i < btn.length; i++) {
 }
 
 
-// دالة للتمرير إلى القسم المطلوب
-function scrollToSection(event, sectionId) {
-    event.preventDefault();  // منع الرابط من الانتقال الفوري
-
-    // البحث عن القسم الذي نريد التمرير إليه
-    const section = document.getElementById(sectionId);
-
-    if (section) {  // تحقق من أن القسم موجود قبل محاولة التمرير إليه
-        // التمرير إلى القسم
-        section.scrollIntoView({
-            behavior: "smooth", // التمرير بسلاسة
-            block: "start" // بداية التمرير من أعلى القسم
-        });
-
-        // إغلاق القائمة المنسدلة عند النقر على عنصر
-        const navbarCollapse = document.getElementById('navbarNavDropdown');
-        const navbarToggler = document.querySelector('.navbar-toggler');
-
-        // التحقق إذا كانت القائمة مفتوحة (تحتوي على class 'show')، ثم إغلاقها
-        if (navbarCollapse.classList.contains('show')) {
-            navbarToggler.click(); // محاكاة الضغط على زر التبديل لإغلاق القائمة
-        }
-    } else {
-        console.error(`القسم ${sectionId} غير موجود.`);
-    }
-}
 
 
 
