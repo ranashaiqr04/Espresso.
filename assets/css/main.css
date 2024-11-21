@@ -221,10 +221,13 @@ i.fa-solid.fa-cart-shopping {
 
 .button .btn.btn-1 {
     background-color: var(--subColor);
-    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.button .btn.btn-1 a{
+    text-decoration: none;
+      color: #fff;
     font-size: 15px;
     font-weight: 400;
-    transition: background-color 0.3s ease;
 }
 
 .button .btn.btn-1:hover {
@@ -1017,6 +1020,30 @@ button.btn.button-menu:hover {
     display: flex;
     gap: 80px;
 }
+i.fa-solid.fa-cart-shopping.menu-cart {
+    color: #fff;
+    background-color: var(--mainColor);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 0;
+}
+@media (max-width: 780px) {
+    i.fa-solid.fa-cart-shopping.menu-cart {
+
+        font-size: 14px;
+        padding: 8px;
+    
+    }
+}
+@media (max-width: 500px) {
+    i.fa-solid.fa-cart-shopping.menu-cart {
+        font-size: 12px;
+    }
+}
 /*********************background***************/
 .header-about{
 position: relative;
@@ -1087,7 +1114,7 @@ overflow: hidden;
     .dec-about,
     .dec-contact,
     .dec-menu{ 
-        padding-top: 43%;
+        padding-top: 43% !important;
     }
 }
 @media (max-width:750px) {
@@ -1101,7 +1128,7 @@ overflow: hidden;
     .dec-about,
     .dec-contact,
     .dec-menu{ 
-        padding-top: 60%;
+        padding-top: 60% !important;
     }
 }
 @media (max-width:548px) {
@@ -1110,7 +1137,7 @@ overflow: hidden;
     .dec-about,
     .dec-contact,
     .dec-menu{ 
-        padding-top: 68%;
+        padding-top: 68% !important;
     }
 }
 @media (max-width:480px) {
@@ -1119,7 +1146,15 @@ overflow: hidden;
     .dec-about,
     .dec-contact,
     .dec-menu{ 
-   padding-top: 80%;
+   padding-top: 80% !important;
+    }
+}
+@media (max-width:420px) {
+    .dec-contact h1{
+        font-size: 25px;
+    }
+    .dec-contact h2{
+        font-size: 18px;
     }
 }
 @media (max-width:405px) {
@@ -1128,8 +1163,9 @@ overflow: hidden;
     .dec-about,
     .dec-contact,
     .dec-menu{ 
-        padding-top: 90%;
+        padding-top: 90% !important;
     }
+ 
 }
 @media (max-width:992px) {
     .header-about{
@@ -1254,7 +1290,7 @@ overflow: hidden;
 }
 
 .menu-icon {
-    background-color: #fff;
+color: #fff;
 }
 
 /************Model****************/
