@@ -1031,6 +1031,21 @@ i.fa-solid.fa-cart-shopping.menu-cart {
     width: 100%;
     margin-left: 0;
 }
+i.fa-solid.fa-cart-shopping.menu-cart {
+    color: #fff;
+    background-color: var(--mainColor);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 0;
+    transition: background-color 0.3s ease;
+}i.fa-solid.fa-cart-shopping.menu-cart:hover {
+background-color: var(--subColor);
+cursor: pointer;
+}
 @media (max-width: 780px) {
     i.fa-solid.fa-cart-shopping.menu-cart {
 
