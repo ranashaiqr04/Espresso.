@@ -116,6 +116,11 @@ i.fa-solid.fa-cart-shopping {
     color: #fff;
     font-size: 25px;
 }
+i.fa-solid.fa-cart-shopping:hover{
+    cursor: pointer;
+    color: var(--thColor);
+
+}
 
 .nav-link.nav-last a {
     display: none;
@@ -982,7 +987,7 @@ nav.navbar.nav-2.nav-menu.navbar-expand-lg{
     color: var(--mainColor);
     font-family: var(--mainFont);
 }
-.py-2 span:last-of-type{
+span.ps-4.fs-lg.m-0.cost{
     color: var(--mainColor);
     font-weight: 500;
 }
@@ -1020,38 +1025,71 @@ button.btn.button-menu:hover {
     display: flex;
     gap: 80px;
 }
-i.fa-solid.fa-cart-shopping.menu-cart {
+
+.add-cart {
     color: #fff;
-    background-color: var(--mainColor);
     text-align: center;
-    font-size: 16px;
-    padding: 10px;
     margin-top: 10px;
     border-radius: 20px;
     width: 100%;
     margin-left: 0;
 }
 i.fa-solid.fa-cart-shopping.menu-cart {
-    color: #fff;
-    background-color: var(--mainColor);
-    text-align: center;
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 20px;
-    width: 100%;
-    margin-left: 0;
-    transition: background-color 0.3s ease;
-}i.fa-solid.fa-cart-shopping.menu-cart:hover {
-background-color: var(--subColor);
-cursor: pointer;
+    font-size: 20px;
+    color: var(--mainColor);
 }
+span.min {
+    font-size: 20px;
+    font-weight: 900;
+    border-right: 1px solid #fff;
+    padding: 8px;
+    color: var(--mainColor);
+    background-color: var(--thColor);
+    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+}
+span.pls {
+    font-size: 20px;
+    font-weight: 900;
+    border-left: 1px solid #fff;
+    padding: 8px;
+    color: var(--mainColor);
+    background-color: var(--thColor);
+    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+}
+span.min:hover,
+span.pls:hover{
+    background-color: var(--mainColor);
+    color: #fff;
+    cursor: pointer;
+}
+
 @media (max-width: 780px) {
     i.fa-solid.fa-cart-shopping.menu-cart {
-
         font-size: 14px;
         padding: 8px;
-    
+    }
+    span.min,
+    span.pls {
+        padding: 0px;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 480px) {
+    span.min,
+    span.pls {
+        border-radius: 20px;
+        width: 25px;
+        height: 25px;
+     font-size: 18px;
+    }
+    .add-cart {
+        width: 67%;
     }
 }
 @media (max-width: 500px) {
